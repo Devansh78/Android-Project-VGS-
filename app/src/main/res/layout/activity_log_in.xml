@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/vgg"
+    android:orientation="vertical"
+    android:paddingTop="50dp"
+    tools:context=".Screen.LogIn">
+
+    <ImageView
+        android:layout_width="290dp"
+        android:layout_height="140dp"
+        android:layout_gravity="center"
+        android:paddingTop="3dp"
+        android:src="@drawable/vglogo" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:paddingTop="20dp"
+        android:text="Welcome"
+        android:textColor="@color/white"
+        android:textSize="25dp"
+        android:textStyle="italic" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:paddingTop="10dp"
+        android:text="Login to Continue"
+        android:textColor="@color/white"
+        android:textSize="25dp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:orientation="vertical">
+
+
+        //Username Design
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/Widget.AppCompat.Light.ActionButton"
+            android:paddingTop="10dp">
+
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/login_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Email"
+                android:background="#A9453D3D"
+                android:inputType="textEmailAddress"
+                android:textColorHint="#C8C8C8" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        //Password design
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/Widget.AppCompat.Light.ActionButton"
+            android:paddingTop="15dp"
+            app:passwordToggleEnabled="true"
+            app:passwordToggleTint="#FFFFFF">
+
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/login_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Password"
+                android:inputType="textPassword"
+                android:background="#A9453D3D"
+                android:textColorHint="#C8C8C8" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+    </LinearLayout>
+
+    //Forgot Button
+
+    <TextView
+        android:id="@+id/forgotPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="36dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="7dp"
+        android:background="#00000000"
+        android:elevation="5dp"
+        android:text="Forgot Password???"
+        android:layout_gravity="right"
+        android:textColor="#FFFFFF"
+        android:textSize="16dp" />
+
+    //Login Button
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/login_btn"
+        android:layout_width="250dp"
+        android:layout_height="45dp"
+        android:text="Login"
+        android:background="@drawable/button_bg"
+        android:textColor="@color/white"
+        android:layout_gravity="center"
+        android:layout_marginTop="15dp"
+        android:elevation="15dp"
+        android:textSize="15dp"
+        android:textStyle="italic|bold"
+        android:layout_marginBottom="5dp"/>
+
+    //SignUp Button
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_gravity="center"
+        android:id="@+id/signup_btn_loginActivity"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:text="SignUp"
+        android:background="@drawable/button_bg"
+        android:elevation="15dp"
+        android:textColor="#FFFFFF"
+        android:layout_marginTop="5dp"
+        android:textStyle="bold|italic"
+        android:textSize="15dp"
+        android:layout_marginBottom="5dp"/>
+
+</LinearLayout>
